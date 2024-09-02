@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" style="user-select: none; border-radius: 15px;">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BANNED ALL WORDS??</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <tab>
+        <button class="button highlight"></button>
+        <logo class="logotype"></logo>
+        <a class="logotype-text">Auto Ban Editor</a>
+        <button onclick="showModalReloading()" class="tab-button gray">R</button>
+    </tab>
+<div class="container">
+  <span class="line-numbers">1</span>
+  <textarea class="content"></textarea>
+  <a class="highlighted-a"></a>
+</div>
+<modal class="reloadingTag">
+  <div class="dialog reloading">
+    <modal-tab>
+      <button class="close" onclick="hideModalReloading()"></button>
+      <a class="modal-title">Reload App</a>
+      <div class="modal-content">Do you want to reload AutoBanEditor?</div>
+      <a href="index.html"><div class="modal-buttons"><button class="yes-modal-reloading">Yes</button></div></a>
+    </modal-tab>
+  </div>
+</modal>
+<script src="js/script.js"></script>
+<script src="js/ban.js"></script>
+<script src="js/modal.js"></script>
+</body>
+</html>

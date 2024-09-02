@@ -1,0 +1,206 @@
+body {
+  z-index: 0;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial;
+    padding: 20px;
+  }
+
+  tab {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 45px;
+    background-color: #222222;
+  }
+  
+  logo.logotype {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    top: 8px;
+    left: 8px;
+    background: url('logo.png');
+    background-size: cover;
+  }
+  button.highlight {
+    width: 0;
+    height: 0;
+    position: fixed;
+    border: none;
+  }
+  a.logotype-text {
+    position: fixed;
+    top: 14px;
+    left: 48px;
+  }
+
+  button.tab-button {
+    cursor: pointer;
+    border: none;
+    position: fixed;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+
+  .gray {
+    color:rgb(51, 51, 51);
+    background-color: rgba(0, 0, 0, 0.219);
+    right: 18px;
+    padding: 0;
+  }
+   
+  .container {
+    margin-top: 34px;
+    display: flex;
+  }
+  
+  .line-numbers {
+    position: absolute;
+    left: 2px;
+    font-size: 18px;
+    counter-reset: line;
+    color: #555;
+    padding: 10px;
+  }
+  
+  .line-numbers span {
+    counter-increment: line;
+    display: block;
+  }
+
+  .modal-content {
+    color:#d3d3d3;
+    position: fixed;
+    top: 55px;
+    text-align: center;
+    left: 50%;
+    translate: -50%;
+  }
+
+  button.close {
+    cursor: pointer;
+    position: fixed;
+    right: 12px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: none;
+    background-color: #ff0000;
+    border-radius: 50%;
+  }
+
+  button.yes-modal-reloading {
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 135px;
+  }
+
+  button.yes-modal-reloading:hover {
+    background-color: #bdbdbd;
+  }
+
+  a.modal-title {
+    position: fixed;
+    top: 11px;
+    left: 50%;
+    translate: -50%;
+  }
+
+  modal-tab {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    background-color: #00000086;
+  }
+
+  modal {
+    transition: 0.5s ease-in;
+    display: none;
+    opacity: 0%;
+    padding: 0;
+    margin: 0;
+    z-index: 22;
+    background-color: #000000b4;
+    position: fixed;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .dialog {
+    background-color: #2c2c2c;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 20px;
+  }
+
+  .reloading {
+    width: 400px;
+    height: 170px;
+  }
+  
+  .content {
+    overflow-y: hidden;
+    resize: none;
+    position: fixed;
+    left: 58px;
+    right: 50px;
+    bottom: 50px;
+    top: 62px;
+    font-family: Arial;
+    font-size: 17.5px;
+    color: #00000000;
+    border-radius: 5px;
+    flex: 1;
+    padding: 10px;
+    background-color: #222;
+    border: 1px solid #444;
+    min-height: 20px; /* Высота одной строки */
+    white-space: nowrap; /* Предотвращает перенос строк */
+  }
+
+  .highlighted-a {
+    color: #cacaca;
+    position: fixed;
+    font-size: 17.5px;
+    user-select: none;
+    translate: 41px 11px;
+    transition: 0.5s ease;
+  }
+
+.banned {
+  filter: blur(3px);
+}
+
+.hubbed {
+  background-color: #ffa200;
+  color: #000;
+  border-radius: 5px;
+}
+
+.nazied {
+  background-color: #ff0000;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.ukr {
+  text-decoration: line-through;
+}
